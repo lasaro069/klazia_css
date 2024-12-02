@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de switch en JavaScript</title>
+    <script>
+        function mostrarMensaje() {
+            var dia = document.getElementById("dia").value;
+            var mensaje = "";
+            
+            switch(dia) {
+                case "Lunes":
+                    mensaje = "Es lunes, empieza la semana!";
+                    break;
+                case "Martes":
+                    mensaje = "Es martes, sigamos adelante!";
+                    break;
+                case "Miércoles":
+                    mensaje = "Es miércoles, mitad de semana!";
+                    break;
+                case "Jueves":
+                    mensaje = "Es jueves, casi el fin de semana!";
+                    break;
+                case "Viernes":
+                    mensaje = "Es viernes, fin de semana a la vista!";
+                    break;
+                case "Sábado":
+                    mensaje = "Es sábado, a disfrutar!";
+                    break;
+                case "Domingo":
+                    mensaje = "Es domingo, día de descanso!";
+                    break;
+                default:
+                    mensaje = "Por favor, selecciona un día válido.";
+            }
+            
+            document.getElementById("resultado").innerText = mensaje;
+        }
+    </script>
+</head>
+<body>
+    <label for="dia">Selecciona un día de la semana:</label>
+    <select id="dia" name="dia">
+        <option value="Lunes">Lunes</option>
+        <option value="Martes">Martes</option>
+        <option value="Miércoles">Miércoles</option>
+        <option value="Jueves">Jueves</option>
+        <option value="Viernes">Viernes</option>
+        <option value="Sábado">Sábado</option>
+        <option value="Domingo">Domingo</option>
+    </select>
+    <button onclick="mostrarMensaje()">Mostrar Mensaje</button>
+    <div id="resultado"></div>
+</body>
+</html>

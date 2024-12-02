@@ -1,0 +1,42 @@
+body{
+    font-family: poppins, sans-serif!important;
+    margin: 0px;
+}
+
+.navbar{
+    width: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 2px 2px 13px #878787a3;
+    height: 62px;
+    position: fixed;
+    top: 0px;
+}
+
+.logo img{
+    width: 200px;
+    margin-left: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.logo img:hover {
+    transform: scale(1.2);
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+    margin-left: 20px;
+    padding: 22px 10px;
+}
+
+.menu a:hover {
+    background-color: gray;
+    color: white;
+}
+
+.menu {
+    margin-right: 50px;
+}

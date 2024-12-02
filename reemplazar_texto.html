@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For con Switch en JavaScript</title>
+    <script>
+        function clasificarNumeros() {
+            var numeros = [1, 2, 3, 4, 5, 6, 'a', 7, 8, 'b'];
+            var resultado = document.getElementById("resultado");
+            resultado.innerHTML = "";
+
+            // Ciclo for para iterar sobre el array de números
+            for (var i = 0; i < numeros.length; i++) {
+                var num = numeros[i];
+                switch (typeof num) {
+                    case 'number':
+                        if (num % 2 === 0) {
+                            resultado.innerHTML += num + " es par.<br>";
+                        } else {
+                            resultado.innerHTML += num + " es impar.<br>";
+                        }
+                        break;
+                    default:
+                        resultado.innerHTML += num + " no es un número válido.<br>";
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <button onclick="clasificarNumeros()">Clasificar Números</button>
+    <div id="resultado"></div>
+</body>
+</html>
