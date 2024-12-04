@@ -1,0 +1,153 @@
+body{
+    font-family: poppins, sans-serif!important;
+    margin: 0px;
+}
+
+.navbar{
+    width: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 2px 2px 13px #878787a3;
+    height: 62px;
+    position: fixed;
+    top: 0px;
+}
+
+.logo img{
+    width: 200px;
+    margin-left: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.logo img:hover {
+    transform: scale(1.2);
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+    margin-left: 20px;
+    padding: 22px 10px;
+}
+
+.menu a:hover {
+    background-color: gray;
+    color: white;
+}
+
+.menu {
+    margin-right: 50px;
+}
+
+.container {
+    margin: 0px 40px 0px 40px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.banner {
+    width: 100%;
+    height: 200px;
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 32px;
+    background-image: url(../images/banner.jpg);
+    color: white;
+
+}
+
+.center {
+    text-align: center;
+}
+
+.banner h2 {
+    font-size: 45px;
+    margin-bottom: 0px;
+}
+
+.subtitle {
+    font-size: 30px;
+    margin: 10px;
+}
+
+.years {
+    font-size: 36px;
+    font-weight: 500;
+    margin: 10px;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+    width: 100%;
+}
+
+.imgPrograms {
+    width: 200px;
+    height: 150px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: flex;
+    margin: 0 auto;
+}
+
+.border {
+    border: 0.5px solid grey;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+}
+
+
+/* max-width mantendrá el diseño hasta la cantidad de px indicados, hacia abajo */
+@media (max-width: 730px) {
+    .menu {
+        display: none;
+    }
+
+    .row {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+}
+
+@media (max-width: 505px) {
+    .banner {
+        height: 200px;
+    }
+}
+
+@media (max-width: 360px) {
+    .banner h2 {
+        font-size: 35px;
+    }
+
+    .subtitle {
+        font-size: 20px;
+    }
+
+    .years {
+        font-size: 28px;
+    }
+}
+
+
+
+@media (min-width: 730px) {
+
+
+    .row {
+        grid-template-columns: repeat(5, 1fr);
+    }
+    
+        
+}
