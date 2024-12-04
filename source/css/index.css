@@ -40,3 +40,111 @@ body{
 .menu {
     margin-right: 50px;
 }
+
+.container {
+    margin: 80px 40px 0px 40px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.banner {
+    width: 100%;
+    height: 320px;
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 32px;
+    background-image: url(../images/banner.jpg);
+    color: white;
+
+}
+
+.center {
+    text-align: center;
+}
+
+.banner h2 {
+    font-size: 45px;
+    margin-bottom: 0px;
+}
+
+.subtitle {
+    font-size: 30px;
+    margin: 10px;
+}
+
+.years {
+    font-size: 36px;
+    font-weight: 500;
+    margin: 10px;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+    width: 100%;
+}
+
+.imgPrograms {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.border {
+    border: 0.5px solid grey;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+}
+
+
+/* max-width mantendrá el diseño hasta la cantidad de px indicados, hacia abajo */
+@media (max-width: 730px) {
+    .menu {
+        display: none;
+    }
+
+    .row {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+}
+
+@media (max-width: 505px) {
+    .banner {
+        height: 450px;
+    }
+}
+
+@media (max-width: 360px) {
+    .banner h2 {
+        font-size: 35px;
+    }
+
+    .subtitle {
+        font-size: 20px;
+    }
+
+    .years {
+        font-size: 28px;
+    }
+}
+
+
+
+@media (min-width: 730px) {
+
+
+    .row {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+        
+}
